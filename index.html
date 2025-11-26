@@ -32,10 +32,15 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.png">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script src="./static/js/index.js"></script>
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
@@ -156,72 +161,65 @@
       <div class="columns is-centered">
         <div class="column is-full-width">
           <h2 class="title is-3 has-text-centered">Qualitative Examples</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <div class="column">
-                <div class="content">
-                  <video id="bmx-trees" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/bmx-trees.mp4" type="video/mp4">
-                  </video>
-                </div>
+
+          <!-- ✅ Swiper 기반 비디오 캐러셀 -->
+          <div id="results-carousel" class="swiper mySwiper results-carousel" style="width: 100%; max-width: 900px;">
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video poster="" id="bmx-trees" autoplay controls muted loop playsinline
+                  style="width: 100%; height: auto;">
+                  <source src="./static/videos/bmx-trees.mp4" type="video/mp4">
+                </video>
               </div>
-              <div class="column">
-                <div class="content">
-                  <video id="dance-twirl" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/dance-twirl.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="swiper-slide">
+                <video poster="" id="dance-twirl" autoplay controls muted loop playsinline
+                  style="width: 100%; height: auto;">
+                  <source src="./static/videos/dance-twirl.mp4" type="video/mp4">
+                </video>
               </div>
-            </div>
-            <div class="columns is-centered">
-              <div class="column">
-                <div class="content">
-                  <video id="dogs-jump" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/dogs-jump.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="swiper-slide">
+                <video poster="" id="dogs-jump" autoplay controls muted loop playsinline
+                  style="width: 100%; height: auto;">
+                  <source src="./static/videos/dogs-jump.mp4" type="video/mp4">
+                </video>
               </div>
-              <div class="column">
-                <div class="content">
-                  <video id="drift-chicane" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/drift-chicane.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="swiper-slide">
+                <video poster="" id="drift-chicane" autoplay controls muted loop playsinline
+                  style="width: 100%; height: auto;">
+                  <source src="./static/videos/drift-chicane.mp4" type="video/mp4">
+                </video>
               </div>
-            </div>
-            <div class="columns is-centered">
-              <div class="column">
-                <div class="content">
-                  <video id="gold-fish" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/gold-fish.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="swiper-slide">
+                <video poster="" id="gold-fish" autoplay controls muted loop playsinline
+                  style="width: 100%; height: auto;">
+                  <source src="./static/videos/gold-fish.mp4" type="video/mp4">
+                </video>
               </div>
-              <div class="column">
-                <div class="content">
-                  <video id="libby" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/libby.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="swiper-slide">
+                <video poster="" id="libby" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/libby.mp4" type="video/mp4">
+                </video>
               </div>
-            </div>
-            <div class="columns is-centered">
-              <div class="column">
-                <div class="content">
-                  <video id="shooting" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/shooting.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="swiper-slide">
+                <video poster="" id="shooting" autoplay controls muted loop playsinline
+                  style="width: 100%; height: auto;">
+                  <source src="./static/videos/shooting.mp4" type="video/mp4">
+                </video>
               </div>
-              <div class="column">
-                <div class="content">
-                  <video id="soapbox" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/soapbox.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="swiper-slide">
+                <video poster="" id="soapbox" autoplay controls muted loop playsinline
+                  style="width: 100%; height: auto;">
+                  <source src="./static/videos/soapbox.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
+
         </div>
       </div>
     </div>
